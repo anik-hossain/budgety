@@ -1,0 +1,85 @@
+<!-- 
+    ********** Title: Budgety **********
+    ********** Description: Calculate Income and Expense Account **********
+    ********** Author: Anik Hossain **********
+    ********** Date: 15-12-2020 **********
+    ********** Inspired by Jonas **********
+
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/v4-shims.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" title="" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" type="text/css" media="all" />
+    <title>Budgety</title>
+</head>
+
+<body>
+    <section class="header">
+        <h1 class="title">Budgety</h1>
+        <div class="top">
+            <h3><span id="time"></span></h3>
+        </div>
+        <div class="bottom">
+            <h1 class="remaining">99900</h1>
+            <div class="income">
+                <h3>Income <span>10000000</span></h3>
+            </div>
+            <div class="expenses">
+                <h3>Expenses <span>82389</span></h3>
+            </div>
+        </div>
+        <div class="form">
+            <form>
+                <select id="type" class="greenBorder">
+                    <option value="income">+</option>
+                    <option value="expense">-</option>
+                </select>
+                <input id="description" class="greenBorder" placeholder="Add Description" />
+                <input id="value" class="greenBorder" placeholder="Value" />
+                <button id="button" class="greenText greenBorder">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="list">
+        <div class="income-list">
+            <h1 class="title greenText">Income</h1>
+            <ul>
+                <li>
+                    Sallary
+                    <span>1000<button><i class="fa fa-times"></i></button></span>
+                </li>
+                <li>
+                    Sold Car
+                    <span>5000 <button><i class="fa fa-times"></i></button></span>
+                </li>
+            </ul>
+        </div>
+        <div class="expense-list">
+            <h1 class="title redText">Expenses</h1>
+            <ul>
+                <li>
+                    rent
+                    <span>9000 <button><i class="fa fa-times"></i></button></span>
+                </li>
+                <li>
+                    Grossery
+                    <span class="redText">4500 <button><i class="fa fa-times"></i></button></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

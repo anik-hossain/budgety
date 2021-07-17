@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+li {
+    list-style: none;
+}
+button:focus,
+select:focus,
+input:focus {
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section.header {
+    background-image: url('../img/bg.jpg'); /* Image Credit Unsplash*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 15px 5px;
+    position: relative;
+    z-index: 1;
+}
+section.header::before {
+    content: '';
+    background: #00c4ff42;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+section.header .top {
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+section.header h1.title {
+    color: #2691b9;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+section.header .bottom {
+    padding: 8px;
+}
+section.header .bottom h1 {
+    color: #40bbe6;
+    font-weight: bolder;
+    font-size: 68px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+section.header .bottom h1::before {
+    content: '+';
+}
+section.header .bottom h3 {
+    color: #fff;
+    display: flex;
+    margin-bottom: 5px;
+    padding: 10px;
+    justify-content: space-between;
+}
+section.header .bottom h3 span {
+    text-align: right;
+}
+section.header .bottom .income h3 span::before {
+    content: '+';
+}
+section.header .bottom .expenses h3 span::before {
+    content: '-';
+}
+section.header .bottom .income {
+    background-color: green;
+}
+section.header .bottom .expenses {
+    background-color: #da0303;
+}
+.form {
+    text-align: center;
+}
+select,
+input {
+    background-color: #fff;
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 3px;
+}
+.form button {
+    background-color: #fff;
+    color: green;
+    border: 2px solid green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+input#description {
+    width: 120px;
+}
+input#value {
+    width: 50px;
+}
+.list {
+    display: flex;
+    overflow: hidden;
+}
+.list .title {
+    padding-bottom: 10px;
+    text-align: center;
+}
+.list .income-list .title {
+    color: green;
+}
+.list .expense-list .title {
+    color: #da0303;
+}
+.income-list,
+.expense-list {
+    padding: 15px;
+    width: 50%;
+}
+.list ul {
+    border: 1px solid #ddd;
+    border-bottom: 0;
+}
+.list li {
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px 5px;
+    text-transform: capitalize;
+    width: 100%;
+}
+.list li button {
+    display: none;
+    margin-left: 2px;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+.list li:hover button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.list li:nth-child(odd) {
+    background: #eee;
+}
+.income-list li span {
+    color: green;
+}
+.expense-list li span {
+    color: #da0303;
+}
+.income-list li span::before {
+    content: '+';
+}
+.expense-list li span::before {
+    content: '-';
+}
+
+/* Common Css */
+
+.greenText {
+    color: green;
+}
+.red {
+    color: #da0303;
+}
+.greenBorder {
+    border-color: green;
+}
+.red {
+    border-color: #da0303;
+}
