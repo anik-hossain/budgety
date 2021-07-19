@@ -87,25 +87,30 @@ section.header .bottom .expenses {
     background-color: #da0303;
 }
 .form {
-    text-align: center;
+    background-color: #eee;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
 }
 select,
 input {
     background-color: #fff;
-    border: 2px solid green;
-    padding: 5px;
+    border: 1px solid green;
+    padding: 6px 8px;
     border-radius: 3px;
 }
 .form button {
     background-color: #fff;
     color: green;
-    border: 2px solid green;
+    border: 1px solid green;
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 input#description {
-    width: 120px;
+    width: 140px;
+    margin: 0 5px;
 }
 input#value {
     width: 50px;

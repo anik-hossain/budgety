@@ -35,20 +35,20 @@
                 <h3>Expenses <span>82389</span></h3>
             </div>
         </div>
-        <div class="form">
-            <form>
-                <select id="type" class="greenBorder">
-                    <option value="income">+</option>
-                    <option value="expense">-</option>
-                </select>
-                <input id="description" class="greenBorder" placeholder="Add Description" />
-                <input id="value" class="greenBorder" placeholder="Value" />
-                <button id="button" class="greenText greenBorder">
-                    <i class="fa fa-plus"></i>
-                </button>
-            </form>
-        </div>
     </section>
+    <div class="form">
+        <form aria-required="true">
+            <select id="type" class="greenBorder">
+                <option value="income">+</option>
+                <option value="expense">-</option>
+            </select>
+            <input id="description" class="greenBorder" placeholder="Add Description" required />
+            <input id="value" class="greenBorder" placeholder="Value" required />
+            <button id="add-btn" class="greenText greenBorder">
+                <i class="fa fa-plus"></i>
+            </button>
+        </form>
+    </div>
 
     <section class="list">
         <div class="income-list">
