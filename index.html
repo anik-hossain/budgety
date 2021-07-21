@@ -29,18 +29,19 @@
         <div class="bottom">
             <h1 class="remaining">99900</h1>
             <div class="income">
-                <h3>Income <span>10000000</span></h3>
+                <h3>Income <span class="total-inc">10000000</span></h3>
             </div>
             <div class="expenses">
-                <h3>Expenses <span>82389</span></h3>
+                <h3>Expenses <div class="d-flex"><span class="total-exp">82389</span><span class="t-percentage">4%</span></div>
+                </h3>
             </div>
         </div>
     </section>
     <div class="form">
-        <form aria-required="true">
+        <form aria-required="true" autocomplete="off">
             <select id="type" class="greenBorder">
-                <option value="income">+</option>
-                <option value="expense">-</option>
+                <option value="inc">+</option>
+                <option value="exp">-</option>
             </select>
             <input id="description" class="greenBorder" placeholder="Add Description" required />
             <input id="value" class="greenBorder" placeholder="Value" required />
@@ -51,30 +52,43 @@
     </div>
 
     <section class="list">
-        <div class="income-list">
+        <div class="income-list" id="inc-list">
             <h1 class="title greenText">Income</h1>
             <ul>
-                <li>
-                    Sallary
-                    <span>1000<button><i class="fa fa-times"></i></button></span>
+                <!-- <li id="inc-id-0">
+                    <span class="item-desc">Sallary</span>
+                    <div class="d-flex">
+                        <span class="item-value">1000</span>
+                        <button class="fa fa-times"></button>
+                    </div>
                 </li>
-                <li>
-                    Sold Car
-                    <span>5000 <button><i class="fa fa-times"></i></button></span>
-                </li>
+                <li id="inc-id-2">
+                    <span class="item-desc">Sold Car</span>
+                    <div class="d-flex">
+                        <span class="item-value">5000</span>
+                        <button class="fa fa-times">
+                        </button>
+                    </div>
+                </li> -->
             </ul>
         </div>
-        <div class="expense-list">
+        <div class="expense-list" id="exp-list">
             <h1 class="title redText">Expenses</h1>
             <ul>
-                <li>
-                    rent
-                    <span>9000 <button><i class="fa fa-times"></i></button></span>
+                <!-- <li id="exp-id-0">
+                    <span class="item-desc">rent</span>
+                    <div class="d-flex"><span class="item-value">9000</span><span class="percentage">85%</span><button
+                            class="fa fa-times"></button></div>
                 </li>
-                <li>
-                    Grossery
-                    <span class="redText">4500 <button><i class="fa fa-times"></i></button></span>
-                </li>
+                <li id="exp-id-1">
+                    <span class="item-desc">Grossery</span>
+                    <div class="d-flex">
+                        <span class="item-value">4500</span>
+                        <span class="percentage">4%</span>
+                        <button class="fa fa-times">
+                        </button>
+                    </div>
+                </li> -->
             </ul>
         </div>
     </section>
@@ -83,3 +97,5 @@
 </body>
 
 </html>
+
+<!-- https://www.youtube.com/watch?v=i89sO5F11_0 -->

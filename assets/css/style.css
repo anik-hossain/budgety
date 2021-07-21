@@ -62,7 +62,7 @@ section.header .bottom h1 {
     padding-bottom: 5px;
 }
 section.header .bottom h1::before {
-    content: '+';
+    /* content: '+'; */
 }
 section.header .bottom h3 {
     color: #fff;
@@ -71,20 +71,35 @@ section.header .bottom h3 {
     padding: 10px;
     justify-content: space-between;
 }
-section.header .bottom h3 span {
-    text-align: right;
+section.header .bottom h3 span.total-exp {
+    display: flex;
+    align-items: center;
 }
-section.header .bottom .income h3 span::before {
-    content: '+';
+section.header .bottom .income h3 span.total-inc::before {
+    /* content: '+ '; */
 }
-section.header .bottom .expenses h3 span::before {
-    content: '-';
+section.header .bottom .expenses h3 span.total-exp::before {
+    /* content: '-'; */
+    padding-right: 5px;
 }
 section.header .bottom .income {
     background-color: green;
 }
 section.header .bottom .expenses {
     background-color: #da0303;
+}
+.t-percentage{
+    background-color: #ffffffb5;
+    color: red;
+    font-size: 12px;
+    display: inline-flex;
+    width: 32px;
+    height: 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 6px;
+    margin-top: 2px;
 }
 .form {
     background-color: #eee;
@@ -141,7 +156,7 @@ input#value {
 .list li {
     color: #666;
     border-bottom: 1px solid #ddd;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
@@ -149,14 +164,21 @@ input#value {
     text-transform: capitalize;
     width: 100%;
 }
+.list span {
+    display: block;
+}
+.list span span {
+    display: inline;
+}
 .list li button {
     display: none;
     margin-left: 2px;
     border-radius: 100%;
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     border: 1px solid #ccc;
     font-weight: bold;
+    margin-top: 1px;
 }
 .list li:hover button {
     display: inline-flex;
@@ -166,21 +188,37 @@ input#value {
 .list li:nth-child(odd) {
     background: #eee;
 }
-.income-list li span {
+.income-list li span.item-value {
     color: green;
 }
-.expense-list li span {
+.expense-list li span.item-value {
     color: #da0303;
 }
-.income-list li span::before {
-    content: '+';
+.income-list li span.item-value::before {
+    /* content: '+'; */
 }
-.expense-list li span::before {
-    content: '-';
+.expense-list li span.item-value::before {
+    /* content: '-'; */
+}
+span.percentage {
+    background: #ff00004a;
+    color: red;
+    font-size: 12px;
+    width: 32px;
+    height: 16px;
+    padding: 0 3px;
+    margin: 2px 5px 0 5px;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Common Css */
 
+.d-flex{
+    display: flex;
+}
 .greenText {
     color: green;
 }
